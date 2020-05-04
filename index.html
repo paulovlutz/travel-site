@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Fly Away</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="./index.html" class="nav__logo--tag"><h3 class="nav__logo--brand">Fly Away</h3></a>
+            </div>
+            <div class="nav__links">
+                <ul class="nav__links--section">
+                    <li class="nav__link"><a href="./index.html" class="nav__tag nav__tag--active">Home</a></li>
+                    <li class="nav__link"><a href="./pages/hawaii.html" class="nav__tag">Hawaii</a></li>
+                    <li class="nav__link"><a href="./pages/iceland.html" class="nav__tag">Iceland</a></li>
+                    <li class="nav__link"><a href="./pages/greece.html" class="nav__tag">Greece</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="hero__header">Travelling Is Always Better With Friends</h1>
+                <p class="hero__paragraph">The word "travel" is most likely lost in history but the memories with
+                    friends will last forever. Book a trip today and gain memories of a lifetime.</p>
+                <form action="./pages/getstarted.html" method="get">
+                    <button>Get Started</button>
+                </form>
+            </div>
+            <div class="hero__image"><img src="./assets/hero.png" alt="hero-image" id="hero-image"></div>
+        </section>
+    </header>
+
+    <main>
+        <section class="recommend">
+            <h1 class="recommend__title">Recommendations</h1>
+            <div class="recommend__card">
+                <div class="recommend__card--country">
+                    <a href="./pages/hawaii.html" class="recommend__card--tag">
+                        <img src="./assets/hawaii.jpg" alt="hawaii" class="recommend__card--image">
+                        <h4 class="recommend__card--text">Hawaii</h4>
+                    </a>
+                </div>
+
+                <div class="recommend__card--country">
+                    <a href="./pages/iceland.html" class="recommend__card--tag">
+                        <img src="./assets/iceland.jpg" alt="iceland" class="recommend__card--image">
+                        <h4 class="recommend__card--text">Iceland</h4>
+                    </a>
+                </div>
+
+                <div class="recommend__card--country">
+                    <a href="./pages/greece.html" class="recommend__card--tag">
+                        <img src="./assets/greece.jpg" alt="greece" class="recommend__card--image">
+                        <h4 class="recommend__card--text">Greece</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

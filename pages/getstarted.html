@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/getstarted.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:400,400i,700&display=swap" rel="stylesheet">
+    <title>Fly Away - Get Started</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="../index.html" class="nav__logo--tag">
+                    <h3 class="nav__logo--brand">Fly Away</h3>
+                </a>
+            </div>
+            <div class="nav__links">
+                <ul class="nav__links--section">
+                    <li class="nav__link"><a href="../index.html" class="nav__tag">Home</a></li>
+                    <li class="nav__link"><a href="hawaii.html" class="nav__tag">Hawaii</a></li>
+                    <li class="nav__link"><a href="iceland.html" class="nav__tag">Iceland</a></li>
+                    <li class="nav__link"><a href="greece.html" class="nav__tag">Greece</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main__text">
+            <h1>Start your booking process!</h1>
+            <h3>We will send you details as soon as possible!</h3>
+        </div>
+        <form class="form">
+            <label for="first-name">First Name</label>
+            <input type="text" class="form__first-name form--style" name="firstname" placeholder="First Name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" class="form__last-name form--style" name="lastname" placeholder="Last Name">
+            
+            <label for="email">Email</label>
+            <input type="email" class="form__email form--style" name="email" placeholder="Email">
+
+            <label>Destination</label>
+            <select class="form__destination form--style" name="country">
+                <option value="choose">Choose Your Destination</option>
+                <option value="australia">Greece</option>
+                <option value="canada">Hawaii</option>
+                <option value="usa">Iceland</option>
+            </select>
+
+            <label for="textarea">Message Us!</label>
+            <textarea name="textarea" class="form__textarea" rows="10"></textarea>
+
+            <input type="submit" class="form__button--style" value="Submit">
+        </form>
+    </main>
+</body>
+
+</html>

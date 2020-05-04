@@ -1,0 +1,160 @@
+/* Global */
+
+button {
+    background-color: #5969d0;
+    border-radius: 100px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 50px;
+}
+
+button:hover {
+    background-color: #3847a7;
+    cursor: pointer;
+}
+
+/* Header */
+
+/* Hero Section */
+
+.hero {
+    margin-top: 3vh;
+    background-color: #f8f8f8;
+    display: flex;
+    padding: 6vw;
+}
+
+.hero__text {
+    width: 60%;
+    text-align: justify;
+}
+
+.hero__header {
+    font-family: 'Comic Neue', cursive; /* I had to use this font because Comic Sans wasn't available */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #101d42;
+}
+
+.hero__paragraph {
+    margin-bottom: 3vh;
+}
+
+.hero__image {
+    width: 40%;
+}
+
+#hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main */
+
+/* Recommendations Section */
+
+.recommend {
+    padding: 3%;
+}
+
+.recommend__title {
+    margin-bottom: 4vh;
+    color: #101d42;
+}
+
+.recommend__card {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.recommend__card--country {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;    
+    width: 20%;  
+    margin-right: 4%;    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    height: 350px;
+    position: relative;
+}
+
+.recommend__card--country:hover {
+    transition: 0.3s;
+    opacity: 0.4;
+}
+
+.recommend__card--image {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recommend__card--text {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin: 25px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+/* Responsive breakpoints */
+/* I worked a little with the breakpoints but not all dimensions will look good */
+
+@media (max-width: 992px) {
+    .hero__header {
+        font-size: 2rem;
+    }
+
+    .recommend__title {
+        font-size: 1.2rem;
+    }
+
+    .recommend__card--country {
+        height: 250px;
+    }
+
+    .recommend__card--text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__header {
+        font-size: 1rem;
+    }
+
+    .hero__text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero__image {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero__paragraph {
+        font-size: 0.8rem;
+    }
+
+    .recommend__title {
+        font-size: 1rem;
+    }
+
+    .recommend__card--country {
+        height: 300px;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .recommend__card--text {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 5px 25px;
+    }
+}

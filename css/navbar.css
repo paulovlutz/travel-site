@@ -1,0 +1,99 @@
+/* Global */
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+html {
+    min-height: 100%;
+    overflow-y: scroll; /* to force the scrollbar all the time so the style does not change */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Navbar */
+
+.nav {
+    position: fixed;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav__logo {
+    font-weight: bold;
+    display: inline;
+}
+
+.nav__logo--tag {
+    text-decoration: none;
+    color: #2d3982;
+}
+
+.nav__logo--brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav__links--section {
+    display: flex;
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.nav__tag {
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 5px;
+    margin-right: 20px;
+}
+
+.nav__tag--active {
+    border-bottom: 2px solid #e37889;
+}
+
+.nav__tag:hover {
+    border-bottom: 2px solid #5969d0;
+    color: #8f8f8f;
+}
+
+.nav__logo--tag:hover {
+    color: #5969d0;
+}
+
+/* Responsive breakpoints */
+/* I worked a little with the breakpoints but not all dimensions will look good */
+
+@media (max-width: 768px) {
+    .nav__links {
+        padding-right: 20px;
+    }
+
+    .nav__logo--brand {
+        font-size: 1.2rem
+    }
+
+    .nav__links {
+        font-size: 1rem
+    }
+}
+
+@media (max-width: 576px) {
+    .nav__logo--brand {
+        font-size: 1rem
+    }
+
+    .nav__links {
+        font-size: 0.8rem
+    }
+}
